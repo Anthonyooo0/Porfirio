@@ -9,7 +9,7 @@ export const siteConfig = {
   
   social: {
     github: "https://github.com/Anthonyooo0",
-    linkedin: "https://linkedin.com/in/anthony-jimenez",
+    linkedin: "https://www.linkedin.com/in/anthony-jimenez/",
     portfolio: "https://anthony-jimenez-portfolio.vercel.app",
   },
 
