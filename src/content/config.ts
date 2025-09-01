@@ -4,7 +4,7 @@ export const siteConfig = {
   location: "United States",
   email: "tj.jimenez03@gmail.com",
   phone: "201-230-4890",
-  tagline: "Manufacturing engineer who builds scrapers, automations, and ML-powered tools that remove manual work and surface insights fast.",
+  tagline: "Results-driven engineer who builds scrapers, automations, and ML-powered tools that remove manual work and surface insights fast.",
   description: "Passionate about turning messy real-world data into simple, reliable systems. Ship small, iterate quickly, and measure outcomes.",
   
   social: {
