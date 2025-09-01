@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Anthony Jimenez",
-  role: "Software Engineer",
+  role: "Automation Engineer",
   location: "United States",
   email: "tj.jimenez03@gmail.com",
   phone: "201-230-4890",
