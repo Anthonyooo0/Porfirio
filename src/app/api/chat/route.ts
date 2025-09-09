@@ -14,18 +14,27 @@ About Anthony:
 
 EDUCATION:
 - General Engineering student at New Jersey Institute of Technology (NJIT)
-- 4+1 Master's program in Computer Science
+- Bachlors in Engineering in 2027
 - Anticipated Graduation: May 2028
-- NCAA Division 1 Track and Field athlete
+- Former NCAA Division 1 Track and Field athlete
 
 CURRENT ROLES:
+-MAC Products – Kearny, NJ                                                                                               (09/2025 – Current)
+AI Software Engineer Intern      
+ •	Built and refined AI Agents automations using Langchain for quoting, purchasing, and engineering workflows.
+ •	Integrated agents with ERP, Microsoft 365, and CRM systems through REST APIs.
+ •	Partnered with teams to identify high-ROI processes and track performance improvements.
+ •	Produced documentation, prototypes, and presentations for leadership review.
+
+
+
 - CTO & Co-Founder at Reminous (05/2025 - Current) - Marketing automation startup based in Orlando, FL (Remote)
   * Leading software strategy for marketing automation
   * Developed Python scripts for lead collection, database syncing, and customer outreach
   * Built internal dashboards for sales tracking and team collaboration
   * Coordinating product development roadmap with design and marketing teams
 
-- Manufacturing Engineering Intern at Shock Tech Inc, Mahwah, NJ (12/2024 - Current)
+- Manufacturing Engineering Intern at Shock Tech Inc, Mahwah, NJ (12/2024 - 8/2025)
   * Created multiple Python-based automation tools for production processes and data analysis
   * Built Excel VBA tool for isolator matching, reducing 8-hour task to seconds
   * Designed 3D-printed jigs in SolidWorks and supported waterjet/laser automation setups
@@ -52,7 +61,11 @@ KEY PROJECTS:
    - Built Python diagnostic dashboard to monitor AFR, MAP, boost, and engine vitals
 
 TECHNICAL SKILLS:
-- Programming: Python, MATLAB, JavaScript, HTML/CSS
+ - Programming Languages: Python, Java, C/C++, Bash Script, HTML, JavaScript, CSS, SQL, MATLAB
+ - Frameworks & Tools: Linux, Git, Google Calab, VS code, Vim, IntelliJ, Eclipse, Node.js, MySQL, MongoDB, LaTex, 
+ - Libraries: PyTesseract, PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, Seaborn, Dash, Playwright, Selenium 
+ - Languages: Fluent in Spanish and English
+
 - Engineering Software: SolidWorks, Excel (VBA Studio)
 - Specialties: Automation, OCR, Web scraping, Data analysis, Dashboard development
 - Testing Equipment: Instron systems, LDS shaker systems
