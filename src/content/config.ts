@@ -85,7 +85,7 @@ export const siteConfig = {
       stack: ["Python", "Playwright", "CSV logging", "Error handling"],
       image: "/projects/linkedin-bot.jpg", 
       liveUrl: "",
-      githubUrl: "https://github.com/anthonyooo0/linkedin-apply-bot",
+      githubUrl: "https://github.com/Anthonyooo0/Linked-in-easy-apply-bot",
     },
     {
       title: "Manufacturing Automation Tools",
