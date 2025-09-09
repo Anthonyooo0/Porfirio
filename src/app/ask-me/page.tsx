@@ -148,11 +148,11 @@ export default function AskMePage() {
                 </div>
                 <div>
                   <span className="text-accent font-medium">Current Work:</span>
-                  <span className="text-muted ml-2">CTO at Reminous, Intern at Shock Tech</span>
+                  <span className="text-muted ml-2">CTO at Reminous, Intern at MAC Products</span>
                 </div>
                 <div>
                   <span className="text-accent font-medium">Athletics:</span>
-                  <span className="text-muted ml-2">NCAA D1 Track &amp; Field</span>
+                  <span className="text-muted ml-2">Former NCAA D1 Track &amp; Field</span>
                 </div>
               </div>
             </div>
