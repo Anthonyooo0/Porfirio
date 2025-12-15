@@ -4,20 +4,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-// Company logos configuration
+// Company logos configuration - using local SVG files
 const companies = [
-  { name: 'Goldman Sachs', logo: 'https://logo.clearbit.com/goldmansachs.com', domain: 'goldmansachs.com' },
-  { name: 'UBS', logo: 'https://logo.clearbit.com/ubs.com', domain: 'ubs.com' },
-  { name: 'Barclays Capital', logo: 'https://logo.clearbit.com/barclays.com', domain: 'barclays.com' },
-  { name: 'Ernst & Young', logo: 'https://logo.clearbit.com/ey.com', domain: 'ey.com' },
-  { name: 'Lehman Brothers', logo: 'https://logo.clearbit.com/lehman.com', domain: 'lehman.com' },
-  { name: 'Citigroup', logo: 'https://logo.clearbit.com/citigroup.com', domain: 'citigroup.com' },
-  { name: 'Condé Nast', logo: 'https://logo.clearbit.com/condenast.com', domain: 'condenast.com' },
-  { name: 'New York Times', logo: 'https://logo.clearbit.com/nytimes.com', domain: 'nytimes.com' },
-  { name: 'Marriott Hotels', logo: 'https://logo.clearbit.com/marriott.com', domain: 'marriott.com' },
-  { name: 'U.S. Open / USTA', logo: 'https://logo.clearbit.com/usta.com', domain: 'usta.com' },
-  { name: 'Compass Group', logo: 'https://logo.clearbit.com/compass-group.com', domain: 'compass-group.com' },
-  { name: 'Restaurant Associates', logo: 'https://logo.clearbit.com/restaurantassociates.com', domain: 'restaurantassociates.com' },
+  { name: 'Goldman Sachs', logo: '/logos/goldman-sachs.svg' },
+  { name: 'UBS', logo: '/logos/ubs.svg' },
+  { name: 'Barclays Capital', logo: '/logos/barclays.svg' },
+  { name: 'Ernst & Young', logo: '/logos/ernst-young.svg' },
+  { name: 'Lehman Brothers', logo: '/logos/lehman.svg' },
+  { name: 'Citigroup', logo: '/logos/citigroup.svg' },
+  { name: 'Condé Nast', logo: '/logos/conde-nast.svg' },
+  { name: 'New York Times', logo: '/logos/nyt.svg' },
+  { name: 'Marriott Hotels', logo: '/logos/marriott.svg' },
+  { name: 'U.S. Open / USTA', logo: '/logos/us-open.svg' },
+  { name: 'Compass Group', logo: '/logos/compass.svg' },
+  { name: 'Restaurant Associates', logo: '/logos/restaurant-associates.svg' },
 ]
 
 export default function Companies() {
@@ -59,18 +59,9 @@ export default function Companies() {
                 <Image
                   src={company.logo}
                   alt={`${company.name} logo`}
-                  width={120}
+                  width={180}
                   height={60}
-                  className="object-contain filter brightness-0 invert opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                  onError={(e) => {
-                    // Fallback to text if logo fails to load
-                    const target = e.target as HTMLImageElement
-                    target.style.display = 'none'
-                    const parent = target.parentElement
-                    if (parent) {
-                      parent.innerHTML = `<span class="text-text font-medium text-center group-hover:text-accent transition-colors duration-300">${company.name}</span>`
-                    }
-                  }}
+                  className="object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </motion.div>
