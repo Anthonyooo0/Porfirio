@@ -2,93 +2,97 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Download, MessageCircle } from 'lucide-react'
+import { ArrowRight, Download } from 'lucide-react'
 import { siteConfig, resumeUrl } from '@/content/config'
 
 export default function Hero() {
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects')
+  const scrollToExperience = () => {
+    const element = document.getElementById('experience')
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
   return (
-    <section 
-      id="hero" 
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 relative bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: 'url(/hero-background.avif)',
-      }}
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16"
     >
-      <div className="absolute inset-0 bg-black/60"></div>
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
-          <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-bold text-text mb-6">
-            {siteConfig.name}
-          </h1>
-          <p className="text-xl sm:text-2xl text-accent font-medium mb-4">
-            {siteConfig.role}
-          </p>
-          <p className="text-lg sm:text-xl text-muted max-w-3xl mx-auto leading-relaxed">
-            {siteConfig.tagline}
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-          <button
-            onClick={scrollToProjects}
-            className="group bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-md font-medium transition-all duration-200 flex items-center gap-2 text-lg"
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left side - Professional photo placeholder */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="order-2 lg:order-1"
           >
-            View Projects
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
-          </button>
-          
-          <a
-            href="/ask-me"
-            className="group border border-accent text-accent hover:bg-accent hover:text-white px-8 py-4 rounded-md font-medium transition-all duration-200 flex items-center gap-2 text-lg"
-          >
-            <MessageCircle size={20} />
-            Ask Me Anything
-          </a>
-
-          <a
-            href={resumeUrl}
-            download
-            className="group border border-muted text-muted hover:border-text hover:text-text px-8 py-4 rounded-md font-medium transition-all duration-200 flex items-center gap-2 text-lg"
-          >
-            <Download size={20} />
-            Download Resume
-          </a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto"
-        >
-          {siteConfig.about.metrics.map((metric) => (
-            <div key={metric.label} className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-accent mb-2">
-                {metric.value}
-              </div>
-              <div className="text-muted text-sm">
-                {metric.label}
+            <div className="relative aspect-[3/4] bg-surface rounded-lg overflow-hidden border border-surface">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-32 h-32 bg-bg rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-accent">
+                    <span className="text-6xl font-bold text-accent">PJ</span>
+                  </div>
+                  <p className="text-muted text-sm">Professional Photo</p>
+                </div>
               </div>
             </div>
-          ))}
-        </motion.div>
+          </motion.div>
+
+          {/* Right side - Large text display */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="order-1 lg:order-2"
+          >
+            <div className="mb-8">
+              <h1 className="font-heading text-6xl sm:text-7xl lg:text-8xl font-bold text-text mb-2">
+                My
+              </h1>
+              <h1 className="font-heading text-6xl sm:text-7xl lg:text-8xl font-bold text-text mb-6">
+                Portfolio
+              </h1>
+              <div className="h-1 w-24 bg-accent mb-8"></div>
+            </div>
+
+            <p className="text-xl sm:text-2xl text-muted leading-relaxed mb-8">
+              {siteConfig.description}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <button
+                onClick={scrollToExperience}
+                className="group bg-accent hover:bg-accent/90 text-bg px-8 py-4 rounded-md font-semibold transition-all duration-200 flex items-center justify-center gap-2 text-lg"
+              >
+                View Experience
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
+              </button>
+
+              <a
+                href={resumeUrl}
+                download
+                className="group border-2 border-accent text-accent hover:bg-accent hover:text-bg px-8 py-4 rounded-md font-semibold transition-all duration-200 flex items-center justify-center gap-2 text-lg"
+              >
+                <Download size={20} />
+                Download Resume
+              </a>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
+              {siteConfig.about.metrics.slice(0, 2).map((metric) => (
+                <div key={metric.label} className="border-l-4 border-accent pl-4">
+                  <div className="text-3xl font-bold text-accent mb-1">
+                    {metric.value}
+                  </div>
+                  <div className="text-muted text-sm">
+                    {metric.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

@@ -1,166 +1,146 @@
 export const siteConfig = {
-  name: "Anthony Jimenez",
-  role: "Machine Learning Engineer",
-  location: "United States",
-  email: "tj.jimenez03@gmail.com",
-  phone: "201-230-4890",
-  tagline: "Machine Learning Engineer specializing in production AI systems, predictive modeling, and intelligent automation using PyTorch, TensorFlow, and LLMs.",
-  description: "Building end-to-end ML systems from data pipelines to model deployment. Experienced in clinical ML, NLP, LLM agents, and production AI workflows.",
-  
+  name: "Porfirio Jimenez",
+  role: "Senior Restaurant Operations Executive",
+  location: "New York Metropolitan Area",
+  email: "tjjimenezooo946@gmail.com",
+  phone: "917-209-5495",
+  tagline: "30+ Years Leading Fine Dining, Corporate Dining & Hotel F&B | Fortune 500 Experience",
+  description: "Accomplished restaurant operations executive with 30+ years managing Fortune 500 corporate dining, luxury hotels, and the U.S. Open.",
+
   social: {
-    github: "https://github.com/Anthonyooo0",
-    linkedin: "https://www.linkedin.com/in/anthony-jimenez-4bb943200/",
-    portfolio: "https://anthony-jimenez-portfolio.vercel.app",
+    linkedin: "https://www.linkedin.com/in/porfirio-jimenez",
   },
 
   nav: [
     { name: "Home", href: "#hero" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
+    { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
+  ],
+
+  companies: [
+    "Goldman Sachs",
+    "UBS",
+    "Barclays Capital",
+    "Ernst & Young",
+    "Lehman Brothers",
+    "Citigroup",
+    "Condé Nast",
+    "New York Times",
+    "Marriott Hotels",
+    "U.S. Open / USTA",
+    "Compass Group",
+    "Restaurant Associates"
   ],
 
   skills: [
     {
-      category: "ML/AI & Deep Learning",
+      category: "Executive Competencies",
       items: [
-        { name: "PyTorch", icon: "brain" },
-        { name: "TensorFlow", icon: "brain" },
-        { name: "scikit-learn", icon: "brain" },
-        { name: "XGBoost", icon: "brain" },
-        { name: "LangChain", icon: "bot" },
-        { name: "SHAP", icon: "chart" },
-        { name: "LLM Agents", icon: "bot" },
-        { name: "RAG", icon: "brain" },
+        { name: "Operations Management", icon: "briefcase" },
+        { name: "P&L Leadership ($15M+)", icon: "trending-up" },
+        { name: "Multi-Unit Management", icon: "building" },
+        { name: "Team Development", icon: "users" },
       ]
     },
     {
-      category: "Data Engineering & Analysis",
+      category: "Operational Excellence",
       items: [
-        { name: "Pandas", icon: "chart" },
-        { name: "NumPy", icon: "calculator" },
-        { name: "SQLite", icon: "database" },
-        { name: "MySQL", icon: "database" },
-        { name: "MongoDB", icon: "database" },
-        { name: "ETL Pipelines", icon: "database" },
-        { name: "Streamlit", icon: "layout" },
-        { name: "FastAPI", icon: "server" },
+        { name: "Fortune 500 Dining", icon: "star" },
+        { name: "Luxury Hotel F&B", icon: "hotel" },
+        { name: "VIP Service", icon: "award" },
+        { name: "High-Volume Operations", icon: "activity" },
       ]
     },
     {
-      category: "Languages & Tools",
+      category: "Specialized Expertise",
       items: [
-        { name: "Python", icon: "code" },
-        { name: "SQL", icon: "database" },
-        { name: "C/C++", icon: "code" },
-        { name: "JavaScript", icon: "code" },
-        { name: "Git", icon: "git-branch" },
-        { name: "Linux", icon: "terminal" },
-        { name: "Jupyter", icon: "code" },
-        { name: "Bash", icon: "terminal" },
+        { name: "New Property Openings", icon: "rocket" },
+        { name: "Cost Optimization", icon: "dollar-sign" },
+        { name: "Vendor Relations", icon: "handshake" },
+        { name: "Food Safety Compliance", icon: "shield" },
       ]
-    }
-  ],
-
-  projects: [
-    {
-      title: "AI Clinical Triage Assistant",
-      description: "Production ML system predicting 24-hour patient deterioration using MIMIC-IV dataset. Built preprocessing pipelines with imputation, outlier handling, and engineered clinical features. Trained XGBoost, Random Forest, and Logistic Regression models with AUC/PR/F1 evaluation. Implemented SHAP interpretability and deployed Streamlit dashboard for clinicians visualizing risk scores and key contributing factors.",
-      stack: ["Python", "XGBoost", "scikit-learn", "SHAP", "Pandas", "Streamlit", "MIMIC-IV"],
-      image: "/projects/clinical-triage.jpg",
-      liveUrl: "",
-      githubUrl: "",
-    },
-    {
-      title: "Complaint Monitor App — AI Workflow Automation",
-      description: "Production AI system ingesting Outlook emails via Microsoft Graph API, extracting part numbers, and classifying complaints using multi-step LLM reasoning with Gemini. Built end-to-end ETL pipeline with OCR, entity extraction, and automated deduplication. Engineered SQLite database with thread merging and conflict resolution. Automated Excel report generation, reducing manual complaint tracking by 70%.",
-      stack: ["Python", "Gemini LLM", "Microsoft Graph API", "SQLite", "OCR", "ETL", "openpyxl"],
-      image: "/projects/complaint-monitor.jpg",
-      liveUrl: "",
-      githubUrl: "",
-    },
-    {
-      title: "V8 Engine Deal Finder — ML-Powered Deal Scoring",
-      description: "End-to-end ML system scraping automotive listings (Craigslist, FB Marketplace, OfferUp, eBay), deduplicating to SQLite, and engineering price/condition features. Trained Random Forest model to score deal quality with 85%+ accuracy. Automated Discord/email alerts for high-value deals on schedule.",
-      stack: ["Python", "Random Forest", "Playwright", "Selenium", "Pandas", "SQLite", "Feature Engineering"],
-      image: "/projects/v8-deal-finder.jpg",
-      liveUrl: "",
-      githubUrl: "https://github.com/Anthonyooo0/Engine_Deal_AI",
-    },
-    {
-      title: "PDF Data Extraction & OCR Pipeline",
-      description: "Automated data extraction pipeline processing PDF attachments from email inbox. Implemented OCR with Tesseract for scanned documents and table extraction for digital PDFs. Built ETL workflow logging structured data to Excel/CSV, eliminating manual data entry and reducing processing time by 90%.",
-      stack: ["Python", "Tesseract OCR", "pdf2image", "Pandas", "openpyxl", "ETL", "IMAP"],
-      image: "/projects/pdf-automation.jpg",
-      liveUrl: "",
-      githubUrl: "https://github.com/Anthonyooo0/Email_PDF_Data_Export",
     }
   ],
 
   about: {
-    bio: "Machine Learning Engineer with hands-on experience building production AI systems, predictive models, and intelligent automation workflows. Currently developing ML solutions at MAC Products using LangChain, LLM agents, and ETL pipelines. Experienced in clinical ML (patient risk prediction), NLP (complaint classification), and end-to-end ML pipelines from data engineering to model deployment. Pursuing General Engineering at NJIT. Former NCAA Division 1 Track and Field athlete. Passionate about applying ML to solve real-world problems in healthcare, manufacturing, and business operations.",
+    bio: "Accomplished restaurant management professional with 30+ years of progressive leadership experience across Fortune 500 corporate dining, luxury hotel operations, and multi-unit restaurant management. Proven expertise directing high-volume operations exceeding $15M annually, managing prestigious accounts including Goldman Sachs, UBS, Barclays, and the U.S. Open Presidential Suite. Distinguished track record in new property openings, team development, cost optimization, and delivering exceptional service in high-pressure, VIP environments.",
     metrics: [
-      { label: "ML Models Deployed", value: "5+" },
-      { label: "Processing Time Reduction", value: "70%+" },
-      { label: "ML/AI Technologies", value: "12+" },
-      { label: "Current Year", value: "Junior @ NJIT" },
+      { label: "Years of Experience", value: "30+" },
+      { label: "Annual Operations", value: "$15M+" },
+      { label: "Team Size Managed", value: "150+" },
+      { label: "Daily Covers", value: "2,000+" },
     ]
   },
 
   experience: [
     {
-      title: "AI Software Engineer — Lead Developer for Internal AI Systems",
-      company: "MAC Products, Kearny, NJ",
-      period: "09/2025 - Current",
-      description: "Lead the architecture and development of end-to-end AI software used across Quality, Engineering, Purchasing, and Customer Service. Built automated data analysis pipelines transforming unstructured emails/PDFs into validated defect logs and trend reports. Designed RAG and agentic workflows using LangChain, SQL, and Gemini/OpenAI for material-code lookup, document retrieval, and compliance review. Implemented multi-stage LLM reasoning and structured-output templates for reliable, production-grade automation. Train multiple departments on AI tools, prompting strategy, and workflow adoption; authored internal AI usage guidelines.",
-      tech: ["LangChain", "Gemini", "OpenAI", "RAG", "SQL", "Python", "LLM Agents", "ETL"]
+      title: "Director of Operations",
+      company: "Restaurant Associates/Compass Group",
+      period: "2000-2008",
+      description: "Directed $15M+ food service operations across Fortune 500 corporate accounts including Goldman Sachs, Barclays Capital, UBS, Ernst & Young, Lehman Brothers, Citigroup, Condé Nast, and NY Times. Managed U.S. Open Presidential Suite at Arthur Ashe Stadium, overseeing VIP hospitality for dignitaries and executives. Led teams of 150+ employees across multiple locations, maintaining 100% contract renewal rate.",
+      highlights: [
+        "Directed $15M+ in annual food service operations",
+        "Managed Fortune 500 accounts: Goldman Sachs, UBS, Barclays Capital, Ernst & Young",
+        "Oversaw U.S. Open Presidential Suite VIP hospitality",
+        "Led teams of 150+ employees across multiple locations",
+        "Maintained 100% contract renewal rate",
+        "Reduced food costs by 15% while enhancing service quality",
+        "Decreased employee turnover by 40% through mentorship programs"
+      ]
     },
     {
-      title: "Manufacturing Engineering Intern",
-      company: "Shock Tech Inc, Mahwah, NJ",
-      period: "12/2023 - 09/2025",
-      description: "Developed a centralized RPA test-data pipeline, converting raw material readings into structured Excel databases used by engineering & management. Built Python + VBA automation for cleaning, parsing, feature extraction, and reporting, reducing processing time by 60%. Performed daily RPA testing and created data-driven dashboards for vibration-isolator mechanical performance. Automated manual workflows to improve accuracy, repeatability, and audit readiness.",
-      tech: ["Python", "Excel/VBA", "Pandas", "Data Pipelines", "Feature Extraction", "Dashboards"]
+      title: "Operations Manager",
+      company: "Restaurant Associates",
+      period: "1995-2000",
+      description: "Managed corporate dining facilities serving 2,000+ daily meals for financial services firms. Oversaw $8M+ annual budget with full P&L responsibility. Reduced food costs 18% and labor costs 12% through strategic purchasing and scheduling. Coordinated special events and executive dining experiences for C-suite clients.",
+      highlights: [
+        "Managed operations serving 2,000+ daily meals",
+        "Full P&L responsibility for $8M+ annual budget",
+        "Reduced food costs by 18% through strategic purchasing",
+        "Decreased labor costs by 12% via optimized scheduling",
+        "Coordinated VIP events and executive dining for C-suite clients"
+      ]
+    },
+    {
+      title: "Restaurant Manager",
+      company: "Restaurant Associates",
+      period: "1991-1995",
+      description: "Recruited from Marriott Hotels to manage high-volume corporate dining operations. Supervised staff of 40+ including sous chefs, line cooks, and service teams. Established quality standards and service protocols that became company benchmarks.",
+      highlights: [
+        "Supervised teams of 40+ culinary and service staff",
+        "Established quality standards adopted company-wide",
+        "Maintained consistently high client satisfaction ratings",
+        "Developed training protocols for new hires"
+      ]
+    },
+    {
+      title: "Restaurant Manager / Opening Specialist",
+      company: "Marriott Hotels",
+      period: "1985-1991",
+      description: "Selected for elite task force opening new properties in Princeton, Park Ridge, Hanover, and Marquise Inn NY. Managed $3M+ F&B operations at LaGuardia Airport Hotel including 200+ seat restaurant, 300-room room service, and banquet facilities. Recruited and trained teams of 30-40 staff per opening.",
+      highlights: [
+        "Selected for elite new property opening task force",
+        "Opened 4+ new hotel properties across multiple markets",
+        "Managed $3M+ F&B operations at LaGuardia Airport Hotel",
+        "Oversaw 200+ seat restaurant, 300-room service, banquet operations",
+        "Reduced room service delivery times by 25%",
+        "Built and trained teams of 30-40+ per opening"
+      ]
+    },
+    {
+      title: "Restaurant Manager",
+      company: "City Tacos, Lyndhurst NJ",
+      period: "2012-2022",
+      description: "Managed fast-casual operations with 15-20 staff members. Oversaw inventory management, cost controls, and vendor relations. Maintained perfect health department compliance.",
+      highlights: [
+        "Managed daily operations for fast-casual restaurant",
+        "Oversaw inventory and cost controls",
+        "Maintained perfect health inspection record",
+        "Managed vendor relations and procurement"
+      ]
     }
   ],
-
-  education: {
-    school: "New Jersey Institute of Technology (NJIT)",
-    college: "Ying Wu College of Computing",
-    location: "Newark, NJ",
-    major: "General Engineering/Computer Science",
-    graduation: "May 2027",
-    athletics: "Former NCAA Division 1 Track and Field athlete (2 years)"
-  },
-
-  faq: [
-    {
-      question: "What's your ML/AI experience?",
-      answer: "I've built production ML systems including clinical patient risk prediction (XGBoost, SHAP interpretability), NLP-based complaint classification (LLM agents, Gemini), and automated deal-scoring pipelines (Random Forest). I work across the full ML lifecycle: data engineering, feature engineering, model training, evaluation, and deployment."
-    },
-    {
-      question: "What ML technologies do you specialize in?",
-      answer: "PyTorch, TensorFlow, and scikit-learn for model development. XGBoost for gradient boosting, SHAP for model interpretability. LangChain and RAG for LLM applications. Pandas/NumPy for data processing, Streamlit for ML dashboards, and SQLite/MySQL for data storage."
-    },
-    {
-      question: "Tell me about your AI Clinical Triage project?",
-      answer: "Built an ML system predicting 24-hour patient deterioration using MIMIC-IV clinical dataset. Implemented preprocessing pipelines, engineered clinical features (vitals trends, lab scores), and trained multiple models (XGBoost, Random Forest). Added SHAP interpretability and deployed a Streamlit dashboard for clinicians to visualize risk scores and key factors."
-    },
-    {
-      question: "What's your experience with LLMs and NLP?",
-      answer: "At MAC Products, I built a production complaint classification system using Gemini LLM with multi-step reasoning. Implemented entity extraction, automated deduplication, and thread merging. Also experienced with LangChain, RAG architectures, and LLM agent workflows for document retrieval and compliance review."
-    },
-    {
-      question: "How did athletics shape your engineering mindset?",
-      answer: "As a former NCAA Division 1 Track and Field athlete at NJIT (2 years), I developed excellent time management and discipline. The competitive mindset translates directly to ML challenges—iterating on models, optimizing hyperparameters, and pushing for better performance metrics through systematic improvement."
-    },
-    {
-      question: "What drives your passion for ML?",
-      answer: "I love building intelligent systems that learn from data and make accurate predictions. There's something powerful about taking messy real-world data (patient vitals, customer complaints, market listings) and transforming it into actionable insights through well-engineered ML pipelines."
-    }
-  ]
 };
 
-export const resumeUrl = "/resume.docx";
+export const resumeUrl = "/resume.pdf";
