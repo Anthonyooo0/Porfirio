@@ -65,12 +65,6 @@ export default function Navigation() {
                 {item.name}
               </button>
             ))}
-            <a
-              href="/ask-me"
-              className="bg-accent hover:bg-accent/90 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200"
-            >
-              Ask Me Anything
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -106,12 +100,6 @@ export default function Navigation() {
                   {item.name}
                 </button>
               ))}
-              <a
-                href="/ask-me"
-                className="bg-accent hover:bg-accent/90 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 text-center"
-              >
-                Ask Me Anything
-              </a>
             </div>
           </motion.div>
         )}

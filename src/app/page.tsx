@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero'
 import Navigation from '@/components/Navigation'
+import Companies from '@/components/Companies'
+import Summary from '@/components/Summary'
 import Skills from '@/components/Skills'
-import Projects from '@/components/Projects'
-import About from '@/components/About'
 import Experience from '@/components/Experience'
 import Contact from '@/components/Contact'
 
@@ -11,10 +11,10 @@ export default function Home() {
     <main className="min-h-screen bg-bg text-text">
       <Navigation />
       <Hero />
-      <Skills />
-      <Projects />
-      <About />
+      <Companies />
+      <Summary />
       <Experience />
+      <Skills />
       <Contact />
     </main>
   );

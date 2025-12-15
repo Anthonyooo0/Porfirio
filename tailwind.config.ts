@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0B0E11",
-        surface: "#131820", 
-        text: "#E6E9EF",
-        muted: "#94A3B8",
-        accent: "#3B82F6",
+        bg: "#2b2b2b",
+        surface: "#3a3a3a",
+        text: "#f5f5f5",
+        muted: "#9ca3af",
+        accent: "#ffffff",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

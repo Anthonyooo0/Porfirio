@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, Github, Linkedin, Send } from 'lucide-react'
+import { Mail, Phone, Linkedin, Send } from 'lucide-react'
 import { siteConfig } from '@/content/config'
 
 export default function Contact() {
@@ -63,7 +63,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
-            Ready to build something amazing together? Let&apos;s discuss your next project.
+            Let&apos;s discuss how my 30+ years of restaurant operations experience can benefit your organization.
           </p>
         </motion.div>
 
@@ -96,27 +96,15 @@ export default function Contact() {
               </a>
             </div>
 
-            <h4 className="font-heading text-lg font-semibold text-text mb-4">
-              Connect With Me
-            </h4>
-            
-            <div className="flex gap-4">
-              <a
-                href={siteConfig.social.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-bg border border-surface rounded-lg hover:border-accent/50 transition-colors duration-200 group"
-              >
-                <Github size={20} className="text-muted group-hover:text-accent transition-colors duration-200" />
-              </a>
-              
+            <div className="space-y-4">
               <a
                 href={siteConfig.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-bg border border-surface rounded-lg hover:border-accent/50 transition-colors duration-200 group"
+                className="flex items-center gap-3 text-muted hover:text-accent transition-colors duration-200"
               >
-                <Linkedin size={20} className="text-muted group-hover:text-accent transition-colors duration-200" />
+                <Linkedin size={20} />
+                <span>LinkedIn Profile</span>
               </a>
             </div>
           </motion.div>
@@ -172,14 +160,14 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-bg border border-surface rounded-md text-text placeholder-muted focus:border-accent focus:outline-none transition-colors duration-200 resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about your opportunity..."
                 />
               </div>
               
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-accent hover:bg-accent/90 disabled:bg-accent/50 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                className="w-full bg-accent hover:bg-accent/90 disabled:bg-accent/50 text-bg px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   'Sending...'
