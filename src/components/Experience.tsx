@@ -2,25 +2,16 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import {
   Briefcase,
   CheckCircle2,
-  Building2,
-  BarChart3,
-  UtensilsCrossed,
-  Rocket,
   Store
 } from 'lucide-react'
 import { siteConfig } from '@/content/config'
 
-const iconMap = {
-  'building-2': Building2,
-  'bar-chart': BarChart3,
-  'utensils': UtensilsCrossed,
-  'rocket': Rocket,
-  'store': Store,
-  'briefcase': Briefcase,
-}
+// Company logos that should use images instead of icons
+const companyLogos = ['compass', 'marriott', 'restaurant-associates']
 
 export default function Experience() {
   return (
@@ -37,7 +28,7 @@ export default function Experience() {
             Career Experience
           </h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
-            Three decades of progressive leadership in restaurant operations, corporate dining, and hospitality
+            Two decades of progressive leadership in restaurant operations, corporate dining, and hospitality
           </p>
         </motion.div>
 
@@ -48,7 +39,8 @@ export default function Experience() {
           <div className="space-y-12">
             {siteConfig.experience.map((job, index) => {
               type JobWithIcon = typeof job & { icon?: string }
-              const IconComponent = iconMap[(job as JobWithIcon).icon as keyof typeof iconMap] || Briefcase
+              const iconName = (job as JobWithIcon).icon || 'briefcase'
+              const isCompanyLogo = companyLogos.includes(iconName)
 
               return (
                 <motion.div
@@ -69,8 +61,20 @@ export default function Experience() {
                     <div className={`${index % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-2'}`}>
                       <div className="bg-bg border border-surface rounded-lg p-6 lg:p-8 hover:border-accent/50 transition-all duration-300 group">
                         <div className="flex items-start gap-4 mb-4">
-                          <div className="p-3 bg-surface rounded-lg group-hover:bg-accent/10 transition-colors duration-300">
-                            <IconComponent size={24} className="text-accent" />
+                          <div className="p-3 bg-surface rounded-lg group-hover:bg-accent/10 transition-colors duration-300 flex items-center justify-center min-w-[60px] min-h-[60px]">
+                            {isCompanyLogo ? (
+                              <Image
+                                src={`/logos/${iconName}.png`}
+                                alt={`${job.company} logo`}
+                                width={40}
+                                height={40}
+                                className="object-contain filter brightness-0 invert"
+                              />
+                            ) : iconName === 'store' ? (
+                              <Store size={24} className="text-accent" />
+                            ) : (
+                              <Briefcase size={24} className="text-accent" />
+                            )}
                           </div>
                           <div className="flex-1">
                             <h3 className="font-heading text-xl lg:text-2xl font-semibold text-text mb-1 group-hover:text-accent transition-colors duration-300">
