@@ -68,7 +68,7 @@ export default function Experience() {
                                 alt={`${job.company} logo`}
                                 width={40}
                                 height={40}
-                                className="object-contain filter brightness-0 invert"
+                                className="object-contain"
                               />
                             ) : iconName === 'store' ? (
                               <Store size={24} className="text-accent" />
