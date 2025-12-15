@@ -4,8 +4,8 @@ export const siteConfig = {
   location: "New York Metropolitan Area",
   email: "tjjimenezooo946@gmail.com",
   phone: "917-209-5495",
-  tagline: "30+ Years Leading Fine Dining, Corporate Dining & Hotel F&B | Fortune 500 Experience",
-  description: "Accomplished restaurant operations executive with 30+ years managing Fortune 500 corporate dining, luxury hotels, and the U.S. Open.",
+  tagline: "20+ Years Leading Fine Dining, Corporate Dining & Hotel F&B | Fortune 500 Experience",
+  description: "Accomplished restaurant operations executive with 20+ years managing Fine Dining including Fortune 500 corporate dining, luxury hotels, and the U.S. Open.",
 
   social: {
     linkedin: "https://www.linkedin.com/in/porfirio-jimenez",
@@ -64,9 +64,9 @@ export const siteConfig = {
   ],
 
   about: {
-    bio: "Accomplished restaurant management professional with 30+ years of progressive leadership experience across Fortune 500 corporate dining, luxury hotel operations, and multi-unit restaurant management. Proven expertise directing high-volume operations exceeding $15M annually, managing prestigious accounts including Goldman Sachs, UBS, Barclays, and the U.S. Open Presidential Suite. Distinguished track record in new property openings, team development, cost optimization, and delivering exceptional service in high-pressure, VIP environments.",
+    bio: "Accomplished restaurant management professional with 20+ years of progressive leadership experience across Fortune 500 corporate dining, luxury hotel operations, and multi-unit restaurant management. Proven expertise directing high-volume operations exceeding $15M annually, managing prestigious accounts including Goldman Sachs, UBS, Barclays, and the U.S. Open Presidential Suite. Distinguished track record in new property openings, team development, cost optimization, and delivering exceptional service in high-pressure, VIP environments.",
     metrics: [
-      { label: "Years of Experience", value: "30+" },
+      { label: "Years of Experience", value: "20+" },
       { label: "Annual Operations", value: "$15M+" },
       { label: "Team Size Managed", value: "150+" },
       { label: "Daily Covers", value: "2,000+" },
@@ -77,8 +77,8 @@ export const siteConfig = {
     {
       title: "Director of Operations",
       company: "Restaurant Associates/Compass Group",
-      period: "2000-2008",
-      icon: "building-2",
+      period: "2001-2003",
+      icon: "compass",
       description: "Directed $15M+ food service operations across Fortune 500 corporate accounts including Goldman Sachs, Barclays Capital, UBS, Ernst & Young, Lehman Brothers, Citigroup, Condé Nast, and NY Times. Managed U.S. Open Presidential Suite at Arthur Ashe Stadium, overseeing VIP hospitality for dignitaries and executives. Led teams of 150+ employees across multiple locations, maintaining 100% contract renewal rate.",
       highlights: [
         "Directed $15M+ in annual food service operations",
@@ -94,7 +94,7 @@ export const siteConfig = {
       title: "Operations Manager",
       company: "Restaurant Associates",
       period: "1995-2000",
-      icon: "bar-chart",
+      icon: "restaurant-associates",
       description: "Managed corporate dining facilities serving 2,000+ daily meals for financial services firms. Oversaw $8M+ annual budget with full P&L responsibility. Reduced food costs 18% and labor costs 12% through strategic purchasing and scheduling. Coordinated special events and executive dining experiences for C-suite clients.",
       highlights: [
         "Managed operations serving 2,000+ daily meals",
@@ -108,7 +108,7 @@ export const siteConfig = {
       title: "Restaurant Manager",
       company: "Restaurant Associates",
       period: "1991-1995",
-      icon: "utensils",
+      icon: "restaurant-associates",
       description: "Recruited from Marriott Hotels to manage high-volume corporate dining operations. Supervised staff of 40+ including sous chefs, line cooks, and service teams. Established quality standards and service protocols that became company benchmarks.",
       highlights: [
         "Supervised teams of 40+ culinary and service staff",
@@ -121,7 +121,7 @@ export const siteConfig = {
       title: "Restaurant Manager / Opening Specialist",
       company: "Marriott Hotels",
       period: "1985-1991",
-      icon: "rocket",
+      icon: "marriott",
       description: "Selected for elite task force opening new properties in Princeton, Park Ridge, Hanover, and Marquise Inn NY. Managed $3M+ F&B operations at LaGuardia Airport Hotel including 200+ seat restaurant, 300-room room service, and banquet facilities. Recruited and trained teams of 30-40 staff per opening.",
       highlights: [
         "Selected for elite new property opening task force",
