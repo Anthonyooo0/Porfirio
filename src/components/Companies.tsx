@@ -4,20 +4,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-// Company logos configuration - using local SVG files
+// Company logos configuration - using local PNG files
 const companies = [
-  { name: 'Goldman Sachs', logo: '/logos/goldman-sachs.svg' },
-  { name: 'UBS', logo: '/logos/ubs.svg' },
-  { name: 'Barclays Capital', logo: '/logos/barclays.svg' },
-  { name: 'Ernst & Young', logo: '/logos/ernst-young.svg' },
-  { name: 'Lehman Brothers', logo: '/logos/lehman.svg' },
-  { name: 'Citigroup', logo: '/logos/citigroup.svg' },
-  { name: 'Condé Nast', logo: '/logos/conde-nast.svg' },
-  { name: 'New York Times', logo: '/logos/nyt.svg' },
-  { name: 'Marriott Hotels', logo: '/logos/marriott.svg' },
-  { name: 'U.S. Open / USTA', logo: '/logos/us-open.svg' },
-  { name: 'Compass Group', logo: '/logos/compass.svg' },
-  { name: 'Restaurant Associates', logo: '/logos/restaurant-associates.svg' },
+  { name: 'Goldman Sachs', logo: '/logos/goldman-sachs.png' },
+  { name: 'UBS', logo: '/logos/ubs.png' },
+  { name: 'Barclays Capital', logo: '/logos/barclays.png' },
+  { name: 'Ernst & Young', logo: '/logos/ernst-young.png' },
+  { name: 'Lehman Brothers', logo: '/logos/lehman.png' },
+  { name: 'Citigroup', logo: '/logos/citigroup.png' },
+  { name: 'Condé Nast', logo: '/logos/conde-nast.png' },
+  { name: 'New York Times', logo: '/logos/nyt.png' },
+  { name: 'Marriott Hotels', logo: '/logos/marriott.png' },
+  { name: 'U.S. Open / USTA', logo: '/logos/us-open.png' },
+  { name: 'Compass Group', logo: '/logos/compass.png' },
+  { name: 'Restaurant Associates', logo: '/logos/restaurant-associates.png' },
 ]
 
 export default function Companies() {
@@ -53,15 +53,16 @@ export default function Companies() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="bg-bg border border-surface rounded-lg p-6 flex items-center justify-center hover:border-accent/50 transition-all duration-300 group min-h-[120px]"
+              className="flex items-center justify-center p-6 rounded-lg hover:bg-bg/50 transition-all duration-300 group"
             >
-              <div className="relative w-full h-16 flex items-center justify-center">
+              <div className="relative w-full h-20 flex items-center justify-center">
                 <Image
                   src={company.logo}
                   alt={`${company.name} logo`}
-                  width={180}
-                  height={60}
-                  className="object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                  width={200}
+                  height={80}
+                  className="object-contain max-w-full max-h-full filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ mixBlendMode: 'lighten' }}
                 />
               </div>
             </motion.div>
