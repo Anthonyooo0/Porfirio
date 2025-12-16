@@ -60,7 +60,8 @@ export default function Companies() {
                   alt={`${company.name} logo`}
                   width={200}
                   height={80}
-                  className="object-contain max-w-full max-h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300 invert"
+                  className="object-contain max-w-full max-h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ mixBlendMode: 'multiply' }}
                 />
               </div>
             </motion.div>
