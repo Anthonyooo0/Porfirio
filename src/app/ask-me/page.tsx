@@ -16,7 +16,7 @@ export default function AskMePage() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      content: "Hi! I'm Anthony's AI assistant. I can answer questions about his background, projects, experience, and skills. What would you like to know?",
+      content: "Hi! I'm Porfirio's AI assistant. I can answer questions about his background, projects, experience, and skills. What would you like to know?",
       role: 'assistant',
       timestamp: new Date()
     }
@@ -25,7 +25,7 @@ export default function AskMePage() {
   const [isLoading, setIsLoading] = useState(false)
 
   const suggestedPrompts = [
-    "What's Anthony's experience with automation?",
+    "What's Porfirio's experience with automation?",
     "Tell me about his ML projects",
     "What technologies does he specialize in?",
     "Describe his work at Shock Tech Inc",
@@ -98,7 +98,7 @@ export default function AskMePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="/" className="font-heading font-bold text-xl text-text hover:text-accent transition-colors duration-200">
-              Anthony Jimenez
+              Porfirio Jimenez
             </a>
             <a
               href="/"
@@ -190,7 +190,7 @@ export default function AskMePage() {
                     <MessageCircle size={16} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-text">Anthony&apos;s AI Assistant</h3>
+                    <h3 className="font-medium text-text">Porfirio&apos;s AI Assistant</h3>
                     <p className="text-xs text-muted">Ask about my background and experience</p>
                   </div>
                 </div>
@@ -262,7 +262,7 @@ export default function AskMePage() {
                     type="text"
                     value={inputMessage}
                     onChange={(e) => setInputMessage(e.target.value)}
-                    placeholder="Ask about Anthony's experience, projects, or skills..."
+                    placeholder="Ask about Porfirio's experience, projects, or skills..."
                     className="flex-1 px-4 py-2 bg-bg border border-surface rounded-md text-text placeholder-muted focus:border-accent focus:outline-none transition-colors duration-200"
                     disabled={isLoading}
                   />
