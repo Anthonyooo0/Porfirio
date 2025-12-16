@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Download } from 'lucide-react'
 import { siteConfig, resumeUrl } from '@/content/config'
+import Image from 'next/image'
 
 export default function Hero() {
   const scrollToExperience = () => {
@@ -20,7 +21,7 @@ export default function Hero() {
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left side - Professional photo placeholder */}
+          {/* Left side - Professional photo */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -28,14 +29,13 @@ export default function Hero() {
             className="order-2 lg:order-1"
           >
             <div className="relative aspect-[3/4] bg-surface rounded-lg overflow-hidden border border-surface">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-bg rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-accent">
-                    <span className="text-6xl font-bold text-accent">PJ</span>
-                  </div>
-                  <p className="text-muted text-sm">Professional Photo</p>
-                </div>
-              </div>
+              <Image
+                src="/logos/IMG_9074.jpg"
+                alt="Porfirio Jimenez"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </motion.div>
 
