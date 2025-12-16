@@ -21,7 +21,7 @@ const companies = [
 
 export default function Companies() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -30,10 +30,10 @@ export default function Companies() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-lg text-muted">
+          <p className="text-lg text-gray-600">
             Managing operations for Fortune 500 companies and prestigious organizations
           </p>
         </motion.div>
@@ -52,7 +52,7 @@ export default function Companies() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="flex items-center justify-center p-6 rounded-lg hover:bg-bg/50 transition-all duration-300 group"
+              className="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 transition-all duration-300 group"
             >
               <div className="relative w-full h-20 flex items-center justify-center">
                 <Image
@@ -61,7 +61,6 @@ export default function Companies() {
                   width={200}
                   height={80}
                   className="object-contain max-w-full max-h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{ mixBlendMode: 'multiply' }}
                 />
               </div>
             </motion.div>
