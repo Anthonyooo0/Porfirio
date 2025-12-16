@@ -26,14 +26,14 @@ export default function Hero() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="order-2 lg:order-1"
+            className="order-2 lg:order-1 flex justify-center lg:justify-start"
           >
-            <div className="relative aspect-[3/4] bg-surface rounded-lg overflow-hidden border border-surface">
+            <div className="relative w-64 h-80 bg-surface rounded-lg overflow-hidden border border-surface">
               <Image
                 src="/logos/IMG_9074.jpg"
                 alt="Porfirio Jimenez"
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>
