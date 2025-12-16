@@ -6,18 +6,17 @@ import Image from 'next/image'
 
 // Company logos configuration - using local PNG files
 const companies = [
-  { name: 'Goldman Sachs', logo: '/logos/goldman-sachs.png' },
   { name: 'UBS', logo: '/logos/ubs.png' },
-  { name: 'Barclays Capital', logo: '/logos/barclays.png' },
-  { name: 'Ernst & Young', logo: '/logos/ernst-young.png' },
+  { name: 'Barclays Capital', logo: '/logos/Barclays.png' },
+  { name: 'Ernst & Young', logo: '/logos/ernstyoung.png' },
   { name: 'Lehman Brothers', logo: '/logos/lehman.png' },
   { name: 'Citigroup', logo: '/logos/citigroup.png' },
-  { name: 'Condé Nast', logo: '/logos/conde-nast.png' },
+  { name: 'Condé Nast', logo: '/logos/condenast.png' },
   { name: 'New York Times', logo: '/logos/nyt.png' },
   { name: 'Marriott Hotels', logo: '/logos/marriott.png' },
-  { name: 'U.S. Open / USTA', logo: '/logos/us-open.png' },
-  { name: 'Compass Group', logo: '/logos/compass.png' },
-  { name: 'Restaurant Associates', logo: '/logos/restaurant-associates.png' },
+  { name: 'U.S. Open / USTA', logo: '/logos/usopen.png' },
+  { name: 'Compass Group', logo: '/logos/compassgroup.png' },
+  { name: 'Restaurant Associates', logo: '/logos/RestaurantAssociates.png' },
 ]
 
 export default function Companies() {
@@ -62,6 +61,7 @@ export default function Companies() {
                   width={200}
                   height={80}
                   className="object-contain max-w-full max-h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ mixBlendMode: 'multiply', filter: 'brightness(0) invert(1)' }}
                 />
               </div>
             </motion.div>

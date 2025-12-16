@@ -11,7 +11,7 @@ import {
 import { siteConfig } from '@/content/config'
 
 // Company logos that should use images instead of icons
-const companyLogos = ['compass', 'marriott', 'restaurant-associates']
+const companyLogos = ['compass', 'marriott', 'restaurant-associates', 'compassgroup', 'RestaurantAssociates']
 
 export default function Experience() {
   return (
@@ -69,6 +69,7 @@ export default function Experience() {
                                 width={40}
                                 height={40}
                                 className="object-contain"
+                                style={{ filter: 'brightness(0) invert(1)' }}
                               />
                             ) : iconName === 'store' ? (
                               <Store size={24} className="text-accent" />
