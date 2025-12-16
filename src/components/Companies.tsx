@@ -17,6 +17,7 @@ const companies = [
   { name: 'U.S. Open / USTA', logo: '/logos/usopen.png' },
   { name: 'Compass Group', logo: '/logos/compassgroup.png' },
   { name: 'Restaurant Associates', logo: '/logos/RestaurantAssociates.png' },
+  { name: 'Goldman Sachs', logo: '/logos/goldmansachs.png' },
 ]
 
 export default function Companies() {
